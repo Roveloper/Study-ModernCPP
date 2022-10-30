@@ -1,6 +1,7 @@
 # Study Modern C++:open_book:
 ## Table of Contents:label:
-* [Study Plan](#Study Plan) 
+* [Study Plan](#study-planstar2) 
+* [1주차](#1주차-221030star)
 ---
 ## Study Plan:star2:
 - [필요한 것만 골라 배우는 모던 C++](http://www.yes24.com/product/goods/114873221)
