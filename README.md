@@ -3,6 +3,7 @@
 * [Study Plan](#study-planstar2) 
 * [1주차](#1주차-221030star)
 * [2주차](#2주차-221105star)
+* [3주차](#3주차-221120star)
 ---
 ## Study Plan:star2:
 - [필요한 것만 골라 배우는 모던 C++](http://www.yes24.com/product/goods/114873221)
