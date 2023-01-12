@@ -7,6 +7,7 @@
 * [4주차](#4주차-221222star)
 * [5주차](#5주차-221229star)
 * [6주차](#6주차-230108star)
+* [7주차](#7주차-230112star)
 ---
 ## Study Plan:star2:
 - [필요한 것만 골라 배우는 모던 C++](http://www.yes24.com/product/goods/114873221)
@@ -166,4 +167,10 @@
   - Ubuntu 20.04 설치 및 `CrazyFile` 조립 중
   - `Localization`은 `Base Station` 기반으로 진행 예정 (`LightHouse`)
   - 다음주까지 환경 세팅 마치고 코드 작성 진행 예정
+---
+### 7주차 (23/01/12):star:
+- `vector`에 관련된 간단한 이야기(`[]`와 `at`의 차이)
+- `valgrind` 및 `sanitizer`를 통한 메모리 누수 방지
+- 메모리 `Heap` 및 `Stack`에 대한 간단한 소개
+- 다음주 진행 여부는 아직 불확실
 ---
