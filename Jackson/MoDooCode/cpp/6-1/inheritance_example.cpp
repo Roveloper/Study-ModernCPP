@@ -22,8 +22,13 @@ public:
                     // 명시적으로 호출하지 않을 경우, Default 생성자를 호출한
                     // 후, Derived Class에 대한 내용이 실행된다.
     std::cout << "파생 클래스" << std::endl;
-    what(); // what은 Base가 가지고 있는 s를 사용한다 (즉 Base Class의 std::string s와 Derived Class의 std::string s는 다른 주소이며, 서로 다른 값을 가진다.)
+    what(); // what은 Base가 가지고 있는 s를 사용한다 (즉 Base Class의
+            // std::string s와 Derived Class의 std::string s는 다른 주소이며,
+            // 서로 다른 값을 가진다.)
   }
+
+  void what() { std::cout << s << std::endl; } // 같은 이름이지만, Base Class의 what은 Base Class의 s를 사용하고,
+                                               // Derived Class의 what은 Derived Class의 s를 사용한다. this is overriding
 };
 
 int main() {
@@ -32,6 +37,6 @@ int main() {
 
   std::cout << " === 파생 클래스 생성 === " << std::endl;
   Derived c;
-  
+
   return 0;
 }
