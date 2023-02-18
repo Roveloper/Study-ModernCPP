@@ -1,0 +1,23 @@
+#ifndef D651513F_89CB_4E1A_9DBF_B073A25F1AA1
+#define D651513F_89CB_4E1A_9DBF_B073A25F1AA1
+
+#include <iostream>
+#include <string>
+
+class Manager {
+private:
+  std::string name_;
+  int age_;
+  std::string position_; // 직책
+  int rank_;
+  int year_of_service_; // 근속 연수
+
+public:
+  Manager(std::string name, int age, std::string position, int rank, int year_of_service);
+  Manager(const Manager &manager);
+  Manager() = default;
+  void print_info();
+  int salary();
+};
+
+#endif /* D651513F_89CB_4E1A_9DBF_B073A25F1AA1 */
