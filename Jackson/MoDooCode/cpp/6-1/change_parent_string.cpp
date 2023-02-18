@@ -10,7 +10,10 @@ public:
 
   void what() { std::cout << parent_string << std::endl; }
 };
-class Derived : public Base {
+class Derived : public Base { // 여기에 있는 public의 의미는 
+                              // Public으로 상속 시에는 기반 클래스의 접근 지시자 (public, protected, private)가 그대로 동작
+                              // Protected로 상속 시에는 기반 클래스의 public이 protected로, 나머지는 그대로 동작
+                              // Private로 상속 시에는 기반 클래스의 public, protected가 모두 private로 동작합니다.
   std::string child_string;
 
 public:
