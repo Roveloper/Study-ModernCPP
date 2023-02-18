@@ -3,13 +3,10 @@
 
 #include <iostream>
 #include <string>
+#include <employee.h>
 
-class Manager {
+class Manager : public Employee{
 private:
-  std::string name_;
-  int age_;
-  std::string position_; // 직책
-  int rank_;
   int year_of_service_; // 근속 연수
 
 public:

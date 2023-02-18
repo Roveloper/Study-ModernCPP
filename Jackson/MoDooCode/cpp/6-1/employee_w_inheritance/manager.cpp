@@ -2,13 +2,9 @@
 
 Manager::Manager(std::string name, int age, std::string position, int rank,
                  int year_of_service)
-    : name_(name), age_(age), position_(position), rank_(rank),
-      year_of_service_(year_of_service){};
-Manager::Manager(const Manager &manager) {
-  name_ = manager.name_;
-  age_ = manager.age_;
-  position_ = manager.position_;
-  rank_ = manager.rank_;
+    : Employee(name, age, position, rank), year_of_service_(year_of_service){};
+Manager::Manager(const Manager &manager)
+    : Employee(manager.name_, manager.age_, manager.position_, manager.rank_) {
   year_of_service_ = manager.year_of_service_;
 }
 void Manager::print_info() {

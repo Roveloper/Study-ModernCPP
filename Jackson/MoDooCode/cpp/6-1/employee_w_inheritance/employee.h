@@ -5,7 +5,7 @@
 #include <string>
 
 class Employee {
-private:
+protected:
   std::string name_;
   int age_;
   std::string position_; // 직책
