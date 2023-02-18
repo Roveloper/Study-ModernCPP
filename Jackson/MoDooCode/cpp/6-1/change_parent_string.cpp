@@ -2,6 +2,7 @@
 #include <string>
 
 class Base {
+protected:
   std::string parent_string;
 
 public:
