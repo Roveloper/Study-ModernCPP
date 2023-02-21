@@ -229,3 +229,9 @@
 - 준규님
   - `D435` + `yolov5` 적용해서 `Object Detection`후, 해당 객체 위치로의 Goal 찾기
 ---
+### 12주차 (23/02/23):star:
+- 재훈님
+  - 상속 관련 내용 설명
+  - `Rule of Three / Five / Zero` 설명
+  - `istream`, `ostream`, `ifstream`, `ofstream`, `stringstream` 관련 내용 설명
+---
