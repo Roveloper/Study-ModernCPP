@@ -10,6 +10,9 @@
 * [7주차](#7주차-230112star)
 * [8주차](#8주차-230126star)
 * [9주차](#9주차-230202star)
+* [10주차](#10주차-230209star)
+* [11주차](#11주차-230216star)
+* [12주차](#12주차-230223star)
 ---
 ## Study Plan:star2:
 - [필요한 것만 골라 배우는 모던 C++](http://www.yes24.com/product/goods/114873221)
@@ -234,4 +237,8 @@
   - 상속 관련 내용 설명
   - `Rule of Three / Five / Zero` 설명
   - `istream`, `ostream`, `ifstream`, `ofstream`, `stringstream` 관련 내용 설명
+- 예빈님
+  - `Dijkstra 최단 경로 알고리즘` 설명/ 예시 문제(https://rndpqls999.tistory.com/214)
+  - `Deep copy` & `Shallow copy` 설명(https://rndpqls999.tistory.com/211)
+  - 시간이 된다면 `DFS` / `BFS` 까지(https://rndpqls999.tistory.com/210)
 ---
