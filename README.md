@@ -237,8 +237,14 @@
   - 상속 관련 내용 설명
   - `Rule of Three / Five / Zero` 설명
   - `istream`, `ostream`, `ifstream`, `ofstream`, `stringstream` 관련 내용 설명
-- 예빈님
+- 예빈님 (안왔는데..? `10000원?`)
   - `Dijkstra 최단 경로 알고리즘` 설명/ 예시 문제(https://rndpqls999.tistory.com/214)
   - `Deep copy` & `Shallow copy` 설명(https://rndpqls999.tistory.com/211)
   - 시간이 된다면 `DFS` / `BFS` 까지(https://rndpqls999.tistory.com/210)
+- 우성님
+  - `Active Suspension` Model 만들기
+- 동현님
+  - `Visual Odometry` 코드에 있는 `FAST` 대신 `ORB`, `BRISK`로 바꿔봄
+- 준규님
+  - `5000원`
 ---
