@@ -234,4 +234,7 @@
   - 상속 관련 내용 설명
   - `Rule of Three / Five / Zero` 설명
   - `istream`, `ostream`, `ifstream`, `ofstream`, `stringstream` 관련 내용 설명
+- 예빈님
+  - Dijkstra 최단 경로 알고리즘 설명/ 예시 문제
+  - Deep copy & Shallow copy 설명
 ---
