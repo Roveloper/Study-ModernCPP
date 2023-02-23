@@ -44,6 +44,11 @@ THE SOFTWARE.
 using namespace cv;
 using namespace std;
 
+
+Ptr<Feature2D> feature_1 = ORB::create(2000);
+Ptr<Feature2D> feature_2 = BRISK::create(); // 느리다
+Ptr<DescriptorMatcher> matcher = BFMatcher::create(NORM_HAMMING,true);
+
 void featureTracking(Mat img_1, Mat img_2, vector<Point2f>& points1, vector<Point2f>& points2, vector<uchar>& status)	{ 
 
 //this function automatically gets rid of points for which tracking fails
@@ -83,31 +88,46 @@ void featureDetection(Mat img_1, vector<Point2f>& points1)	{   //uses FAST as of
 }
 
 
-void ORBTracking(Mat img_1, Mat img_2, vector<DMatch>& good_matches){
+void ORBTracking(Mat img_1, Mat img_2, vector<Point2f>& p1, vector<Point2f>& p2, vector<DMatch>& good_matches){
 
-  vector<float> err;
-  Ptr<DescriptorMatcher> matcher = ORB::create();
   vector<DMatch> matches;
-
-  Ptr<Feature2D> feature_1 = ORB::create();
-  Ptr<Feature2D> feature_2 = ORB::create();
 
   vector<KeyPoint> keypoint_1, keypoint_2;
 
   Mat desc1, desc2;
 
   feature_1->detectAndCompute(img_1, Mat(), keypoint_1, desc1);
-  feature_2->detectAndCompute(img_2, Mat(), keypoint_2, desc2);
+  feature_1->detectAndCompute(img_2, Mat(), keypoint_2, desc2);
+  // feature_2->detectAndCompute(img_1, Mat(), keypoint_1, desc1);
+  // feature_2->detectAndCompute(img_2, Mat(), keypoint_2, desc2);
   
  // 참조로 desc1,2받아오기
   matcher->match(desc1,desc2,matches);
 
   sort(matches.begin(), matches.end());
-  vector<DMatch> gmatch(matches.begin(), matches.begin() + 50);
+  vector<DMatch> gmatch(matches.begin(), matches.begin() + 1000);
   good_matches = gmatch;
-  matches[0].queryIdx;
-  matches[0].trainIdx;
+  // queryIdx : 기준 영상 특징점(src1) int
+  // trainIdx : 대상 영상 특징점(src2) int
 
+  for (auto mat:good_matches)
+  {
+    int img1_idx = mat.queryIdx;
+    int img2_idx = mat.trainIdx;
+
+    Point2f c1,c2;
+    c1 = keypoint_1[img1_idx].pt;
+    c2 = keypoint_2[img2_idx].pt;
+
+    p1.push_back(c1);
+    p2.push_back(c2);
+  }
+
+  // Mat po1(2, p1.size(), CV_8UC3, p1);
+
+  // matches[0].queryIdx;
+  // matches[0].trainIdx;
+  // 지금 목표 : int형으로 나오는 queryIdx랑 trainIdx랑 좌표로 뽑아내야 할 것 같은데..
 }
 
 void ORBDetection(Mat img_1, vector<Point2f>& points1){

@@ -146,13 +146,13 @@ int main( int argc, char** argv )	{
 
   // feature detection, tracking
   vector<Point2f> points1, points2;        //vectors to store the coordinates of the feature points
+  
   // featureDetection(img_1, points1);        //detect features in img_1
-  ORBDetection(img_1, points1);
+  //ORBDetection(img_1, points1);
   vector<uchar> status;
   vector<DMatch> good_matches;
-  
   // featureTracking(img_1,img_2,points1,points2, status); //track those features to img_2
-  ORBTracking(img_1,img_2, good_matches); //track those features to img_2
+  ORBTracking(img_1,img_2, points1,points2, good_matches); //track those features to img_2
 
   //TODO: add a fucntion to load these values directly from KITTI's calib files
   // WARNING: different sequences in the KITTI VO dataset have different intrinsic/extrinsic parameters
@@ -160,14 +160,20 @@ int main( int argc, char** argv )	{
   cv::Point2d pp(607.1928, 185.2157);
   //recovering the pose and the essential matrix
   Mat E, R, t, mask;
+  
+  cout << points1.size() << endl;
+  cout << points2.size() << endl;
+
+
   E = findEssentialMat(points2, points1, focal, pp, RANSAC, 0.999, 1.0, mask); // 두 이미지의 해당 점에서 필수 행렬을 계산
+  
   recoverPose(E, points2, points1, R, t, focal, pp, mask); // 두 이미지의 해당 점으로부터 상대 카메라 회전 및 평행 이동을 복구
 
   // previous image, current image의 feature와 Mat,vector 정의
   Mat prevImage = img_2;
   Mat currImage;
-  vector<Point2f> prevFeatures = points2;
-  vector<Point2f> currFeatures;
+  // vector<Point2f> prevFeatures = points2;
+  // vector<Point2f> currFeatures;
 
   char filename[100];
 
@@ -184,6 +190,8 @@ int main( int argc, char** argv )	{
 
   
   for(int numFrame=2; numFrame < MAX_FRAME; numFrame++)	{
+    vector<Point2f> prevFeatures;
+    vector<Point2f> currFeatures;
   	sprintf(filename, "/home/park/kitti_ws/src/data_odometry_gray/dataset/sequences/08/image_0/%06d.png", numFrame);
     //cout << numFrame << endl;
   	Mat currImage_c = imread(filename); // 현재 파일 받아서 현재 이미지에 넣음(color)
@@ -191,7 +199,11 @@ int main( int argc, char** argv )	{
   	vector<uchar> status; // feature를 추적한 값을 담는 공간
     vector<DMatch> good_matches;
   	// featureTracking(prevImage, currImage, prevFeatures, currFeatures, status);
-  	ORBTracking(prevImage, currImage, good_matches);
+  	ORBTracking(prevImage, currImage, prevFeatures, currFeatures, good_matches);
+
+
+    cout << currFeatures.size() << endl;
+    cout << prevFeatures.size() << endl;
 
   	E = findEssentialMat(currFeatures, prevFeatures, focal, pp, RANSAC, 0.999, 1.0, mask);
   	recoverPose(E, currFeatures, prevFeatures, R, t, focal, pp, mask);
@@ -230,9 +242,9 @@ int main( int argc, char** argv )	{
       //cout << "Number of tracked features reduced to " << prevFeatures.size() << endl;
       //cout << "trigerring redection" << endl;
  		  // featureDetection(prevImage, prevFeatures);
-      ORBDetection(prevImage, prevFeatures);
+      //ORBDetection(prevImage, prevFeatures);
       // featureTracking(prevImage,currImage,prevFeatures,currFeatures, status);
-      ORBTracking(prevImage,currImage, good_matches);
+      ORBTracking(prevImage,currImage, prevFeatures,currFeatures, good_matches);
 
  	  }
 
