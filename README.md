@@ -251,12 +251,12 @@
 ---
 ### 13주차 (23/03/02):star:
 - 재훈님
-  - 
+  - 발표할 내용 써주세요
 - 예빈님
   - 지난주 안한 내용 + 추가한 내용
   - `DFS` / `BFS` 로 코드 짜기 (https://rndpqls999.tistory.com/210)
   - `무방향 그래프` 탐색 예시 문제(https://rndpqls999.tistory.com/221)
   - `Deep copy` & `Shallow copy` 설명(https://rndpqls999.tistory.com/211)
 - 준규님
-  - 
+  - 발표할 내용 써주세요
 ---
