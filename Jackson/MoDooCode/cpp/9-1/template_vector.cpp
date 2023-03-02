@@ -4,7 +4,7 @@
 // template <typename T> == template <class T> 동일한 의미 but, typename T를 권장
 
 template <typename T> class Vector {
-    T *data_;
+    T *data_; // array list를 구현
     int capacity_;
     int length_;
 

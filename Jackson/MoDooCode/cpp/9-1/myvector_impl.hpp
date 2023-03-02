@@ -1,6 +1,4 @@
-#include "myvector.hpp"
-
-template <typename T> 
+template <typename T>
 Vector<T>::Vector(int n) : data_(new T[n]), capacity_(n), length_(0) {}
 
 template <typename T>
