@@ -13,6 +13,7 @@
 * [10주차](#10주차-230209star)
 * [11주차](#11주차-230216star)
 * [12주차](#12주차-230223star)
+* [13주차](#13주차-230302star)
 ---
 ## Study Plan:star2:
 - [필요한 것만 골라 배우는 모던 C++](http://www.yes24.com/product/goods/114873221)
@@ -247,4 +248,15 @@
   - `Visual Odometry` 코드에 있는 `FAST` 대신 `ORB`, `BRISK`로 바꿔봄
 - 준규님
   - `5000원`
+---
+### 13주차 (23/03/02):star:
+- 재훈님
+  - 
+- 예빈님
+  - 지난주 안한 내용 + 추가한 내용
+  - `DFS` / `BFS` 로 코드 짜기 (https://rndpqls999.tistory.com/210)
+  - `무방향 그래프` 탐색 예시 문제(https://rndpqls999.tistory.com/221)
+  - `Deep copy` & `Shallow copy` 설명(https://rndpqls999.tistory.com/211)
+- 준규님
+  - 
 ---
