@@ -265,7 +265,7 @@
 - 재훈님
   - 
 - 동현님
-  - 
+  - CycleGAN 돌리기 위한 환경 설정 + 학습중...
 - 우성님
   - semi active susepension 원리 
 

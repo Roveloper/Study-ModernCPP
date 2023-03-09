@@ -261,6 +261,8 @@ int main( int argc, char** argv )	{
     circle(traj, Point(xx, zz), 1, CV_RGB(0,255,0), 2);
 
     rectangle( traj, Point(10, 30), Point(550, 50), CV_RGB(0,0,0), CV_FILLED);
+    rectangle( traj, Point(10, 50), Point(550, 50), CV_RGB(0,0,0), CV_FILLED);//덮어주는 느낌
+
     sprintf(text, "Coordinates: x = %02fm y = %02fm z = %02fm", t_f.at<double>(0), t_f.at<double>(1), t_f.at<double>(2));
     sprintf(text2, "Coordinates: x = %02fm y = %02fm z = %02fm", gt.x, gt.y, gt.z);
 
