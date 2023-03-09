@@ -263,10 +263,9 @@
 
 ### 14주차 (23/03/09):star:
 - 재훈님
-  - 
+  - `C++ Inline 함수` 내용 + `implementation header` 관련 내용 추가
 - 동현님
   - CycleGAN 돌리기 위한 환경 설정 + 학습중...
 - 우성님
   - semi active susepension 원리 
-
 ---
