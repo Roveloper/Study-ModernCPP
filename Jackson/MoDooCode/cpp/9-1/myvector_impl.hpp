@@ -35,6 +35,13 @@ int Vector<T>::size() { return length_; }
 template <typename T>
 Vector<T>::~Vector() { delete[] data_; }
 
+template <typename T>
+void Vector<T>::swap(int i, int j) {
+    T temp = data_[i];
+    data_[i] = data_[j];
+    data_[j] = temp;
+}
+
 Vector<bool>::Vector(int n) : data_(new unsigned int[n / 32 + 1]), capacity_(n / 32 + 1), length_(0) {
     for (int i = 0; i < capacity_; ++i) {
         data_[i] = 0;

@@ -18,6 +18,8 @@ template <typename T> class Vector {
 
     int size();
 
+    void swap(int i, int j);
+
     ~Vector();
 };
 
