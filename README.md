@@ -14,6 +14,8 @@
 * [11주차](#11주차-230216star)
 * [12주차](#12주차-230223star)
 * [13주차](#13주차-230302star)
+* [14주차](#14주차-230309star)
+* [15주차](#15주차-230323star)
 ---
 ## Study Plan:star2:
 - [필요한 것만 골라 배우는 모던 C++](http://www.yes24.com/product/goods/114873221)
@@ -269,6 +271,10 @@
 - 우성님
   - semi active susepension 원리 
 ---
-### 15주차 (23/03/16):star:
+### 15주차 (23/03/23):star:
 - 재훈님
-  - `C++ Template 특수화`
+  - `C++ Template 특수화` & `Variadic Template` & `TMP` 
+
+### 16주차 (23/03/30):star:
+- 재훈님
+  - `STL` & `예외처리` & `rvalue reference` & `move semantics` & `perfect forwarding`
