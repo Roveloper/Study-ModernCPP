@@ -260,7 +260,7 @@
   - `무방향 그래프` 탐색 예시 문제(https://rndpqls999.tistory.com/221)
   - `Deep copy` & `Shallow copy` 설명(https://rndpqls999.tistory.com/211)
 - 준규님
-  - 발표할 내용 써주세요
+  -  `D435`를 이용해 도킹 스테이션 구축 위한 관련자료 발표 
 ---
 
 ### 14주차 (23/03/09):star:
@@ -274,7 +274,10 @@
 ### 15주차 (23/03/23):star:
 - 재훈님
   - `C++ Template 특수화` & `Variadic Template` & `TMP` 
-
+- 준규님
+  - `D435` + `yolov5` 로 물체 각도 측정. 
+  - 이후  `2D LiDAR` + `Camera` Calibration 진행 예정
+  - 관련 코드 내용 추가
 ### 16주차 (23/03/30):star:
 - 재훈님
   - `STL` & `예외처리` & `rvalue reference` & `move semantics` & `perfect forwarding`
