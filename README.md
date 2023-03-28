@@ -278,6 +278,6 @@
   - `D435` + `yolov5` 로 물체 각도 측정. 
   - 이후  `2D LiDAR` + `Camera` Calibration 진행 예정
   - 관련 코드 내용 추가
-### 16주차 (23/03/30):star:
+### 16주차 (23/04/01):star:
 - 재훈님
-  - `STL` & `예외처리` & `rvalue reference` & `move semantics` & `perfect forwarding`
+  - `STL` & `예외처리` & `rvalue reference` & `move semantics` & `perfect forwarding` & `Smart Ptr`
