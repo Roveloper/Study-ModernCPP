@@ -16,6 +16,7 @@
 * [13주차](#13주차-230302star)
 * [14주차](#14주차-230309star)
 * [15주차](#15주차-230323star)
+* [16주차](#16주차-230401star)
 ---
 ## Study Plan:star2:
 - [필요한 것만 골라 배우는 모던 C++](http://www.yes24.com/product/goods/114873221)
@@ -280,4 +281,7 @@
   - 관련 코드 내용 추가
 ### 16주차 (23/04/01):star:
 - 재훈님
-  - `STL` & `예외처리` & `rvalue reference` & `move semantics` & `perfect forwarding` & `Smart Ptr`
+  - `STL` & `예외처리` & `rvalue reference`
+### 17주차 (23/04/06):star:
+- 재훈님
+  - `move semantics` & `perfect forwarding` & `Smart Ptr`
