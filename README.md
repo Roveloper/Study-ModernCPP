@@ -284,4 +284,4 @@
   - `STL` & `예외처리` & `rvalue reference`
 ### 17주차 (23/04/06):star:
 - 재훈님
-  - `move semantics` & `perfect forwarding` & `Smart Ptr`
+  - `move semantics` & `perfect forwarding` & `Smart Ptr` & `Callable`
