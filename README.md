@@ -17,6 +17,8 @@
 * [14주차](#14주차-230309star)
 * [15주차](#15주차-230323star)
 * [16주차](#16주차-230401star)
+* [17주차](#17주차-230406star)
+* [18주차](#18주차-230413star)
 ---
 ## Study Plan:star2:
 - [필요한 것만 골라 배우는 모던 C++](http://www.yes24.com/product/goods/114873221)
@@ -284,6 +286,11 @@
   - `STL` & `예외처리` & `rvalue reference`
 ### 17주차 (23/04/06):star:
 - 재훈님
-  - `move semantics` & `perfect forwarding` & `Smart Ptr` & `Callable`
+  - `move semantics` & `perfect forwarding` & `Unique Ptr`
 - 동현님
-  - 'StarGAN v2 논문리뷰'
+  - `StarGAN v2 논문리뷰`
+- 우성님
+  - `Active Suspension` Simulink & CarMaker로 테스트
+### 18주차 (23/04/13):star:
+- 재훈님
+  - `Shared Ptr` & `Callable`
