@@ -285,3 +285,5 @@
 ### 17주차 (23/04/06):star:
 - 재훈님
   - `move semantics` & `perfect forwarding` & `Smart Ptr` & `Callable`
+- 동현님
+  - 'StarGAN v2 논문리뷰'
