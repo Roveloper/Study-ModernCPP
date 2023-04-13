@@ -293,6 +293,6 @@
   - `Active Suspension` Simulink & CarMaker로 테스트
 ### 18주차 (23/04/13):star:
 - 재훈님
-  - `Shared Ptr` & `Callable`
+  - `Shared Ptr` & `Callable` & `C++ GUI App`
 - 예빈님
   - BlackJack 카드 게임 구현한 코드(객체지향, 상속)
