@@ -296,3 +296,7 @@
   - `Shared Ptr` & `Callable` & `C++ GUI App`
 - 예빈님
   - BlackJack 카드 게임 구현한 코드(객체지향, 상속)
+
+### 19주차 (23/04/20):star:
+- 재훈님
+  - C++ `Thread`
