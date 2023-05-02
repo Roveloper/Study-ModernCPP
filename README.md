@@ -310,3 +310,7 @@
 ### 20주차 (23/04/27):star:
 - 재훈님
   - `Atomic`, `Memory Order`
+
+### 21주차 (23/05/04):star:
+- 재훈님
+  - `Python` `Selenium` 사용 예시, `Future & Promise`
