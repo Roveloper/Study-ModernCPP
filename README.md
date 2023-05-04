@@ -314,3 +314,5 @@
 ### 21주차 (23/05/04):star:
 - 재훈님
   - `Python` `Selenium` 사용 예시, `Future & Promise`
+- 우성님
+  - `Active Suspension` 관련 `TTC` 계산 및 이를 통한 제어 소개
