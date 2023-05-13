@@ -320,4 +320,4 @@
 - 휴식 (회식)
 ### 23주차 (23/05/18)
 - 재훈님
-  - `ThreadPool`
+  - `ThreadPool` & `initializer_list`
