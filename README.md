@@ -316,3 +316,8 @@
   - `Python` `Selenium` 사용 예시, `Future & Promise`
 - 우성님
   - `Active Suspension` 관련 `TTC` 계산 및 이를 통한 제어 소개
+### 22주차 (23/05/11):star:
+- 휴식 (회식)
+### 23주차 (23/05/18)
+- 재훈님
+  - `ThreadPool`
