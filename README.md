@@ -21,6 +21,7 @@
 * [18주차](#18주차-230413star)
 * [19주차](#19주차-230420star)
 * [20주차](#20주차-230427star)
+* [23주차](#23주차-230518star)
 ---
 ## Study Plan:star2:
 - [필요한 것만 골라 배우는 모던 C++](http://www.yes24.com/product/goods/114873221)
@@ -316,8 +317,16 @@
   - `Python` `Selenium` 사용 예시, `Future & Promise`
 - 우성님
   - `Active Suspension` 관련 `TTC` 계산 및 이를 통한 제어 소개
+  
 ### 22주차 (23/05/11):star:
 - 휴식 (회식)
+  
 ### 23주차 (23/05/18)
 - 재훈님
   - `ThreadPool` & `initializer_list`
+- 예빈님
+  - `Point Cloud Library`
+- 준규님
+  - `C# 기반 주행 제어 코드`
+
+  
