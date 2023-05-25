@@ -324,11 +324,13 @@
 - 휴식 (회식)
   
 ### 23주차 (23/05/18):star:
-- 재훈님
-  - `ThreadPool` & `initializer_list`
 - 예빈님
   - `Point Cloud Library`
 - 준규님
   - `C# 기반 주행 제어 코드`
+
+### 24주차 (23/05/25):star
+- 재훈님
+  - `ThreadPool` & `initializer_list`
 
   
