@@ -24,6 +24,8 @@
 * [21주차](#21주차-230504star)
 * [22주차](#22주차-230511star)
 * [23주차](#23주차-230518star)
+* [24주차](#24주차-230525star)
+* [25주차](#25주차-230601star)
 ---
 ## Study Plan:star2:
 - [필요한 것만 골라 배우는 모던 C++](http://www.yes24.com/product/goods/114873221)
@@ -332,5 +334,9 @@
 ### 24주차 (23/05/25):star
 - 재훈님
   - `ThreadPool` & `initializer_list`
+  
+### 25주차 (23/06/01):star
+- 예빈님
+  - `pcl RANSAC` & `clustering`
 
   
