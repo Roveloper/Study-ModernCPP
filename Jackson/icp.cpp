@@ -32,7 +32,9 @@ Vector2D icp_matching(std::vector<Point2D>& previous_points, std::vector<Point2D
 
     auto [indexes, error] = nearest_neighbor_association(previous_points, current_points);
     auto [Rt, Tt] = svd_motion_estimation(previous_points[:, indexes], current_points);
-    current_points = (Rt @ current_points) + Tt[:, np.newaxis];
+    
+    
+    current_points = (Rt @ current_points) + Tt[:, np.newaxis]; // RT, 이용해서 Transformation하는 코드 필요
 
     dError = preError - error;
     std::cout << "residual = " << error << std::endl;
