@@ -333,19 +333,19 @@
 - 준규님
   - `C# 기반 주행 제어 코드`
 
-### 24주차 (23/05/25):star
+### 24주차 (23/05/25):star:
 - 재훈님
   - `ThreadPool` & `initializer_list`
   
-### 25주차 (23/06/01):star
+### 25주차 (23/06/01):star:
 - 예빈님
   - `pcl RANSAC` & `clustering`
  
-### 26주차 (23/06/17):star
+### 26주차 (23/06/17):star:
 - 우성님
   - 
 
-### 28주차 (23/07/01):star
+### 28주차 (23/07/01):star:
 - 예빈님
   - GUI `rqt_example` & `qt_creator`
 
